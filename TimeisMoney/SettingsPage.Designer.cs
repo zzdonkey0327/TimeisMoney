@@ -28,31 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnExportExpense = new System.Windows.Forms.Button();
+            this.btnExportTask = new System.Windows.Forms.Button();
+            this.btnBackupDb = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // btnExportExpense
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(97, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.btnExportExpense.Location = new System.Drawing.Point(163, 61);
+            this.btnExportExpense.Name = "btnExportExpense";
+            this.btnExportExpense.Size = new System.Drawing.Size(231, 45);
+            this.btnExportExpense.TabIndex = 1;
+            this.btnExportExpense.Text = "匯出記帳紀錄 (CSV)";
+            this.btnExportExpense.UseVisualStyleBackColor = true;
+            // 
+            // btnExportTask
+            // 
+            this.btnExportTask.Location = new System.Drawing.Point(163, 121);
+            this.btnExportTask.Name = "btnExportTask";
+            this.btnExportTask.Size = new System.Drawing.Size(231, 45);
+            this.btnExportTask.TabIndex = 2;
+            this.btnExportTask.Text = "匯出任務紀錄 (CSV)";
+            this.btnExportTask.UseVisualStyleBackColor = true;
+            // 
+            // btnBackupDb
+            // 
+            this.btnBackupDb.Location = new System.Drawing.Point(163, 182);
+            this.btnBackupDb.Name = "btnBackupDb";
+            this.btnBackupDb.Size = new System.Drawing.Size(231, 45);
+            this.btnBackupDb.TabIndex = 3;
+            this.btnBackupDb.Text = "備份整個資料庫檔案 (.db)";
+            this.btnBackupDb.UseVisualStyleBackColor = true;
             // 
             // SettingsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnBackupDb);
+            this.Controls.Add(this.btnExportTask);
+            this.Controls.Add(this.btnExportExpense);
             this.Name = "SettingsPage";
+            this.Size = new System.Drawing.Size(550, 400);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExportExpense;
+        private System.Windows.Forms.Button btnExportTask;
+        private System.Windows.Forms.Button btnBackupDb;
     }
 }

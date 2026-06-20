@@ -165,11 +165,11 @@
             // 
             this.dgvExpenses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvExpenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExpenses.Location = new System.Drawing.Point(3, 281);
+            this.dgvExpenses.Location = new System.Drawing.Point(3, 278);
             this.dgvExpenses.Name = "dgvExpenses";
             this.dgvExpenses.RowHeadersWidth = 62;
             this.dgvExpenses.RowTemplate.Height = 31;
-            this.dgvExpenses.Size = new System.Drawing.Size(532, 107);
+            this.dgvExpenses.Size = new System.Drawing.Size(544, 122);
             this.dgvExpenses.TabIndex = 15;
             this.dgvExpenses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExpenses_CellClick);
             // 
@@ -216,7 +216,7 @@
             this.Controls.Add(this.cmbType);
             this.Controls.Add(this.label1);
             this.Name = "ExpensePage";
-            this.Size = new System.Drawing.Size(538, 388);
+            this.Size = new System.Drawing.Size(550, 400);
             this.Load += new System.EventHandler(this.ExpensePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).EndInit();
