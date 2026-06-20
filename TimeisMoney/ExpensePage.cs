@@ -8,6 +8,8 @@ namespace TimeisMoney
 {
     public partial class ExpensePage : UserControl
     {
+        // 用來記錄目前準備要編輯或刪除的資料 ID，-1 代表沒選取
+        private int currentSelectedId = -1;
         public ExpensePage()
         {
             InitializeComponent();
@@ -94,12 +96,116 @@ namespace TimeisMoney
             ClearInput(); // 寫一個小方法把輸入框清空
         }
 
+
+
         // 清空輸入區的輔助方法
         private void ClearInput()
         {
             numAmount.Value = 0;
             txtNote.Clear();
             dtpRecordDate.Value = DateTime.Now;
+        }
+
+        private void dgvExpenses_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // 確保點擊的是有效的資料列 (排除標題列)
+            if (e.RowIndex >= 0)
+            {
+                // 取得目前點選的該筆資料列
+                DataGridViewRow row = dgvExpenses.Rows[e.RowIndex];
+
+                // 將隱藏在表格中的 ID 存入變數 (假設 ExpenseId 是第 0 欄)
+                currentSelectedId = Convert.ToInt32(row.Cells["ExpenseId"].Value);
+
+                // 將表格的資料倒灌回 UI 控制項
+                cmbType.SelectedItem = row.Cells["Type"].Value.ToString();
+                cmbCategory.SelectedItem = row.Cells["Category"].Value.ToString();
+                numAmount.Value = Convert.ToDecimal(row.Cells["Amount"].Value);
+
+                // 處理日期格式
+                if (DateTime.TryParse(row.Cells["RecordDate"].Value.ToString(), out DateTime recordDate))
+                {
+                    dtpRecordDate.Value = recordDate;
+                }
+
+                cmbPaymentMethod.SelectedItem = row.Cells["PaymentMethod"].Value.ToString();
+                txtNote.Text = row.Cells["Note"].Value.ToString();
+
+                // 開啟編輯與刪除按鈕
+                btnUpdate.Enabled = true;
+                btnDelete.Enabled = true;
+                btnAdd.Enabled = false; // 編輯模式下先關閉新增按鈕
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (currentSelectedId == -1) return;
+
+            using (var connection = DatabaseHelper.GetConnection())
+            {
+                connection.Open();
+                string updateQuery = @"
+            UPDATE ExpenseRecords 
+            SET Type = @Type, Category = @Category, Amount = @Amount, 
+                RecordDate = @RecordDate, Note = @Note, PaymentMethod = @PaymentMethod
+            WHERE ExpenseId = @ExpenseId";
+
+                using (var cmd = new SqliteCommand(updateQuery, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Type", cmbType.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@Category", cmbCategory.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@Amount", numAmount.Value);
+                    cmd.Parameters.AddWithValue("@RecordDate", dtpRecordDate.Value.ToString("yyyy-MM-dd"));
+                    cmd.Parameters.AddWithValue("@Note", txtNote.Text);
+                    cmd.Parameters.AddWithValue("@PaymentMethod", cmbPaymentMethod.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@ExpenseId", currentSelectedId);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            MessageBox.Show("資料已更新！", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ResetFormState();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (currentSelectedId == -1) return;
+
+            // 給一個防呆確認視窗
+            var confirmResult = MessageBox.Show("確定要刪除這筆紀錄嗎？", "確認刪除", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (confirmResult == DialogResult.Yes)
+            {
+                using (var connection = DatabaseHelper.GetConnection())
+                {
+                    connection.Open();
+                    string deleteQuery = "DELETE FROM ExpenseRecords WHERE ExpenseId = @ExpenseId";
+
+                    using (var cmd = new SqliteCommand(deleteQuery, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@ExpenseId", currentSelectedId);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show("資料已刪除！", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetFormState();
+            }
+        }
+
+        // 寫一個小方法用來重置表單狀態
+        private void ResetFormState()
+        {
+            LoadData(); // 重新整理表格
+            ClearInput(); // 之前寫過的清空輸入框方法
+            currentSelectedId = -1;
+
+            // 按鈕狀態恢復預設
+            btnAdd.Enabled = true;
+            btnUpdate.Enabled = false;
+            btnDelete.Enabled = false;
         }
     }
 }

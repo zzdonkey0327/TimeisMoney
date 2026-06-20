@@ -42,6 +42,8 @@
             this.txtNote = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvExpenses = new System.Windows.Forms.DataGridView();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +51,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 40);
+            this.label1.Location = new System.Drawing.Point(28, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 18);
             this.label1.TabIndex = 0;
@@ -58,7 +60,7 @@
             // cmbType
             // 
             this.cmbType.FormattingEnabled = true;
-            this.cmbType.Location = new System.Drawing.Point(143, 37);
+            this.cmbType.Location = new System.Drawing.Point(129, 24);
             this.cmbType.Name = "cmbType";
             this.cmbType.Size = new System.Drawing.Size(121, 26);
             this.cmbType.TabIndex = 3;
@@ -66,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 77);
+            this.label2.Location = new System.Drawing.Point(64, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 18);
             this.label2.TabIndex = 4;
@@ -75,7 +77,7 @@
             // cmbCategory
             // 
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(140, 77);
+            this.cmbCategory.Location = new System.Drawing.Point(129, 61);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(121, 26);
             this.cmbCategory.TabIndex = 5;
@@ -83,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 116);
+            this.label3.Location = new System.Drawing.Point(64, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 18);
             this.label3.TabIndex = 6;
@@ -91,20 +93,20 @@
             // 
             // numAmount
             // 
-            this.numAmount.Location = new System.Drawing.Point(143, 116);
+            this.numAmount.Location = new System.Drawing.Point(129, 100);
             this.numAmount.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.numAmount.Name = "numAmount";
-            this.numAmount.Size = new System.Drawing.Size(120, 29);
+            this.numAmount.Size = new System.Drawing.Size(121, 29);
             this.numAmount.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 151);
+            this.label4.Location = new System.Drawing.Point(64, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 18);
             this.label4.TabIndex = 8;
@@ -112,7 +114,7 @@
             // 
             // dtpRecordDate
             // 
-            this.dtpRecordDate.Location = new System.Drawing.Point(140, 151);
+            this.dtpRecordDate.Location = new System.Drawing.Point(129, 145);
             this.dtpRecordDate.Name = "dtpRecordDate";
             this.dtpRecordDate.Size = new System.Drawing.Size(200, 29);
             this.dtpRecordDate.TabIndex = 9;
@@ -120,7 +122,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(61, 197);
+            this.label5.Location = new System.Drawing.Point(28, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 18);
             this.label5.TabIndex = 10;
@@ -129,7 +131,7 @@
             // cmbPaymentMethod
             // 
             this.cmbPaymentMethod.FormattingEnabled = true;
-            this.cmbPaymentMethod.Location = new System.Drawing.Point(164, 197);
+            this.cmbPaymentMethod.Location = new System.Drawing.Point(129, 189);
             this.cmbPaymentMethod.Name = "cmbPaymentMethod";
             this.cmbPaymentMethod.Size = new System.Drawing.Size(121, 26);
             this.cmbPaymentMethod.TabIndex = 11;
@@ -137,7 +139,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(64, 246);
+            this.label6.Location = new System.Drawing.Point(64, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 18);
             this.label6.TabIndex = 12;
@@ -145,14 +147,14 @@
             // 
             // txtNote
             // 
-            this.txtNote.Location = new System.Drawing.Point(140, 246);
+            this.txtNote.Location = new System.Drawing.Point(129, 231);
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(100, 29);
+            this.txtNote.Size = new System.Drawing.Size(121, 29);
             this.txtNote.TabIndex = 13;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(382, 238);
+            this.btnAdd.Location = new System.Drawing.Point(382, 220);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(115, 40);
             this.btnAdd.TabIndex = 14;
@@ -163,17 +165,42 @@
             // 
             this.dgvExpenses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvExpenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExpenses.Location = new System.Drawing.Point(29, 281);
+            this.dgvExpenses.Location = new System.Drawing.Point(3, 281);
             this.dgvExpenses.Name = "dgvExpenses";
             this.dgvExpenses.RowHeadersWidth = 62;
             this.dgvExpenses.RowTemplate.Height = 31;
-            this.dgvExpenses.Size = new System.Drawing.Size(492, 107);
+            this.dgvExpenses.Size = new System.Drawing.Size(532, 107);
             this.dgvExpenses.TabIndex = 15;
+            this.dgvExpenses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExpenses_CellClick);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Enabled = false;
+            this.btnUpdate.Location = new System.Drawing.Point(382, 124);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 40);
+            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.Text = "儲存修改";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Enabled = false;
+            this.btnDelete.Location = new System.Drawing.Point(382, 172);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(115, 40);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "刪除紀錄";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // ExpensePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dgvExpenses);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtNote);
@@ -214,5 +241,7 @@
         private System.Windows.Forms.TextBox txtNote;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgvExpenses;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
