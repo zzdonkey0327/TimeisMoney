@@ -28,13 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnTask = new System.Windows.Forms.Button();
+            this.btnExpense = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.panelMainContent = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.Controls.Add(this.btnSettings);
+            this.panelMenu.Controls.Add(this.btnTask);
+            this.panelMenu.Controls.Add(this.btnExpense);
+            this.panelMenu.Controls.Add(this.btnDashboard);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(200, 450);
+            this.panelMenu.TabIndex = 0;
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Location = new System.Drawing.Point(0, 150);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(200, 50);
+            this.btnSettings.TabIndex = 3;
+            this.btnSettings.Text = "系統設定";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            // 
+            // btnTask
+            // 
+            this.btnTask.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTask.Location = new System.Drawing.Point(0, 100);
+            this.btnTask.Name = "btnTask";
+            this.btnTask.Size = new System.Drawing.Size(200, 50);
+            this.btnTask.TabIndex = 2;
+            this.btnTask.Text = "任務時間";
+            this.btnTask.UseVisualStyleBackColor = true;
+            // 
+            // btnExpense
+            // 
+            this.btnExpense.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpense.Location = new System.Drawing.Point(0, 50);
+            this.btnExpense.Name = "btnExpense";
+            this.btnExpense.Size = new System.Drawing.Size(200, 50);
+            this.btnExpense.TabIndex = 1;
+            this.btnExpense.Text = "記帳管理";
+            this.btnExpense.UseVisualStyleBackColor = true;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(200, 50);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Text = "總覽分析";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            // 
+            // panelMainContent
+            // 
+            this.panelMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainContent.Location = new System.Drawing.Point(200, 0);
+            this.panelMainContent.Name = "panelMainContent";
+            this.panelMainContent.Size = new System.Drawing.Size(600, 450);
+            this.panelMainContent.TabIndex = 1;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelMainContent);
+            this.Controls.Add(this.panelMenu);
+            this.Name = "MainForm";
             this.Text = "Form1";
+            this.panelMenu.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button btnExpense;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Button btnTask;
+        private System.Windows.Forms.Panel panelMainContent;
     }
 }
 

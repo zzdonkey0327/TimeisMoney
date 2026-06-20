@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TimeisMoney.Helpers;
 
 namespace TimeisMoney
 {
@@ -16,6 +17,10 @@ namespace TimeisMoney
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // 在主畫面啟動前，確保資料庫與資料表已建立
+            DatabaseHelper.InitializeDatabase();
+
             Application.Run(new MainForm());
         }
     }
