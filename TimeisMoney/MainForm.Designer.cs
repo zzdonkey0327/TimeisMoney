@@ -36,12 +36,14 @@ namespace TimeisMoney
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelMainContent = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Controls.Add(this.btnSettings);
             this.panelMenu.Controls.Add(this.btnTask);
@@ -66,10 +68,9 @@ namespace TimeisMoney
             // 
             // btnSettings
             // 
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSettings.Location = new System.Drawing.Point(0, 400);
+            this.btnSettings.Location = new System.Drawing.Point(0, 401);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(200, 50);
             this.btnSettings.TabIndex = 3;
@@ -78,10 +79,9 @@ namespace TimeisMoney
             // 
             // btnTask
             // 
-            this.btnTask.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTask.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnTask.Location = new System.Drawing.Point(0, 450);
+            this.btnTask.Location = new System.Drawing.Point(0, 353);
             this.btnTask.Name = "btnTask";
             this.btnTask.Size = new System.Drawing.Size(200, 50);
             this.btnTask.TabIndex = 2;
@@ -90,10 +90,9 @@ namespace TimeisMoney
             // 
             // btnExpense
             // 
-            this.btnExpense.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExpense.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnExpense.Location = new System.Drawing.Point(0, 500);
+            this.btnExpense.Location = new System.Drawing.Point(0, 303);
             this.btnExpense.Name = "btnExpense";
             this.btnExpense.Size = new System.Drawing.Size(200, 50);
             this.btnExpense.TabIndex = 1;
@@ -102,10 +101,9 @@ namespace TimeisMoney
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDashboard.Location = new System.Drawing.Point(0, 550);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 253);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(200, 50);
             this.btnDashboard.TabIndex = 0;
@@ -120,6 +118,18 @@ namespace TimeisMoney
             this.panelMainContent.Size = new System.Drawing.Size(800, 600);
             this.panelMainContent.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(4, 208);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(291, 42);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Time is Money!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -132,6 +142,7 @@ namespace TimeisMoney
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Time is money個人記帳與時間成本管理系統";
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -146,6 +157,7 @@ namespace TimeisMoney
         private System.Windows.Forms.Button btnTask;
         private System.Windows.Forms.Panel panelMainContent;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
