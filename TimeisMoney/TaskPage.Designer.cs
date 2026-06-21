@@ -1,16 +1,16 @@
-ï»¿namespace TimeisMoney
+namespace TimeisMoney
 {
     partial class TaskPage
     {
         /// <summary> 
-        /// è¨­è¨ˆå·¥å…·æ‰€éœ€çš„è®Šæ•¸ã€‚
+        /// ³]­p¤u¨ã©Ò»İªºÅÜ¼Æ¡C
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// æ¸…é™¤ä»»ä½•ä½¿ç”¨ä¸­çš„è³‡æºã€‚
+        /// ²M°£¥ô¦ó¨Ï¥Î¤¤ªº¸ê·½¡C
         /// </summary>
-        /// <param name="disposing">å¦‚æœæ‡‰è©²è™•ç½®å—æ§è³‡æºå‰‡ç‚º trueï¼Œå¦å‰‡ç‚º falseã€‚</param>
+        /// <param name="disposing">¦pªGÀ³¸Ó³B¸m¨ü±±¸ê·½«h¬° true¡A§_«h¬° false¡C</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region å…ƒä»¶è¨­è¨ˆå·¥å…·ç”¢ç”Ÿçš„ç¨‹å¼ç¢¼
+        #region ¤¸¥ó³]­p¤u¨ã²£¥Íªºµ{¦¡½X
 
         /// <summary> 
-        /// æ­¤ç‚ºè¨­è¨ˆå·¥å…·æ”¯æ´æ‰€éœ€çš„æ–¹æ³• - è«‹å‹¿ä½¿ç”¨ç¨‹å¼ç¢¼ç·¨è¼¯å™¨ä¿®æ”¹
-        /// é€™å€‹æ–¹æ³•çš„å…§å®¹ã€‚
+        /// ¦¹¬°³]­p¤u¨ã¤ä´©©Ò»İªº¤èªk - ½Ğ¤Å¨Ï¥Îµ{¦¡½X½s¿è¾¹­×§ï
+        /// ³o­Ó¤èªkªº¤º®e¡C
         /// </summary>
         private void InitializeComponent()
         {
@@ -54,17 +54,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.label1.Location = new System.Drawing.Point(14, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ä»»å‹™åç¨±:";
+            this.label1.Text = "¥ô°È¦WºÙ:";
             // 
             // txtTaskName
             // 
-            this.txtTaskName.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtTaskName.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTaskName.Location = new System.Drawing.Point(135, 15);
             this.txtTaskName.Name = "txtTaskName";
             this.txtTaskName.Size = new System.Drawing.Size(143, 34);
@@ -73,17 +73,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.label2.Location = new System.Drawing.Point(62, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 30);
             this.label2.TabIndex = 2;
-            this.label2.Text = "åˆ†é¡:";
+            this.label2.Text = "¤ÀÃş:";
             // 
             // cmbCategory
             // 
-            this.cmbCategory.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cmbCategory.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(135, 63);
             this.cmbCategory.Name = "cmbCategory";
@@ -93,17 +93,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.label3.Location = new System.Drawing.Point(26, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 30);
             this.label3.TabIndex = 4;
-            this.label3.Text = "æ™‚è–ª ($):";
+            this.label3.Text = "®ÉÁ~ ($):";
             // 
             // numHourlyRate
             // 
-            this.numHourlyRate.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numHourlyRate.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.numHourlyRate.Location = new System.Drawing.Point(135, 110);
             this.numHourlyRate.Maximum = new decimal(new int[] {
             99999,
@@ -128,35 +128,35 @@
             // 
             // btnStart
             // 
-            this.btnStart.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStart.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnStart.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.btnStart.Location = new System.Drawing.Point(457, 115);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(119, 49);
             this.btnStart.TabIndex = 7;
-            this.btnStart.Text = "â–¶ é–‹å§‹";
+            this.btnStart.Text = "¶}©l";
             this.btnStart.UseVisualStyleBackColor = true;
             // 
             // btnPause
             // 
-            this.btnPause.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPause.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnPause.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.btnPause.Location = new System.Drawing.Point(457, 170);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(119, 49);
             this.btnPause.TabIndex = 8;
-            this.btnPause.Text = "â¸ æš«åœ";
+            this.btnPause.Text = "¼È°±";
             this.btnPause.UseVisualStyleBackColor = true;
             // 
             // btnStop
             // 
-            this.btnStop.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStop.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnStop.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.btnStop.Location = new System.Drawing.Point(457, 222);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(119, 49);
             this.btnStop.TabIndex = 9;
-            this.btnStop.Text = "â¹ çµæŸ";
+            this.btnStop.Text = "µ²§ô";
             this.btnStop.UseVisualStyleBackColor = true;
             // 
             // taskTimer
@@ -170,7 +170,7 @@
             this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("æ–°ç´°æ˜é«”", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("·s²Ó©úÅé", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.LimeGreen;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LimeGreen;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
@@ -181,50 +181,50 @@
             this.dgvTasks.Name = "dgvTasks";
             this.dgvTasks.RowHeadersWidth = 62;
             this.dgvTasks.RowTemplate.Height = 31;
-            this.dgvTasks.Size = new System.Drawing.Size(593, 170);
+            this.dgvTasks.Size = new System.Drawing.Size(793, 320);
             this.dgvTasks.TabIndex = 10;
             // 
             // rdoStopwatch
             // 
             this.rdoStopwatch.AutoSize = true;
             this.rdoStopwatch.Checked = true;
-            this.rdoStopwatch.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.rdoStopwatch.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.rdoStopwatch.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.rdoStopwatch.Location = new System.Drawing.Point(342, 17);
             this.rdoStopwatch.Name = "rdoStopwatch";
             this.rdoStopwatch.Size = new System.Drawing.Size(86, 34);
             this.rdoStopwatch.TabIndex = 11;
             this.rdoStopwatch.TabStop = true;
-            this.rdoStopwatch.Text = "ç¢¼è¡¨";
+            this.rdoStopwatch.Text = "½Xªí";
             this.rdoStopwatch.UseVisualStyleBackColor = true;
             // 
             // rdoPomodoro
             // 
             this.rdoPomodoro.AutoSize = true;
-            this.rdoPomodoro.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.rdoPomodoro.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.rdoPomodoro.ForeColor = System.Drawing.Color.Firebrick;
             this.rdoPomodoro.Location = new System.Drawing.Point(457, 17);
             this.rdoPomodoro.Name = "rdoPomodoro";
             this.rdoPomodoro.Size = new System.Drawing.Size(110, 34);
             this.rdoPomodoro.TabIndex = 12;
-            this.rdoPomodoro.Text = "ç•ªèŒ„é˜";
+            this.rdoPomodoro.Text = "µf­XÄÁ";
             this.rdoPomodoro.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.label4.Location = new System.Drawing.Point(337, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 25);
             this.label4.TabIndex = 13;
-            this.label4.Text = "è¨­å®šåˆ†é˜ï¼š";
+            this.label4.Text = "³]©w¤ÀÄÁ¡G";
             // 
             // numPomodoroMins
             // 
             this.numPomodoroMins.Enabled = false;
-            this.numPomodoroMins.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numPomodoroMins.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.numPomodoroMins.Location = new System.Drawing.Point(457, 62);
             this.numPomodoroMins.Name = "numPomodoroMins";
             this.numPomodoroMins.Size = new System.Drawing.Size(119, 34);
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Controls.Add(this.numPomodoroMins);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rdoPomodoro);
@@ -257,7 +257,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.LimeGreen;
             this.Name = "TaskPage";
-            this.Size = new System.Drawing.Size(600, 450);
+            this.Size = new System.Drawing.Size(800, 600);
             this.Load += new System.EventHandler(this.TaskPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHourlyRate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).EndInit();

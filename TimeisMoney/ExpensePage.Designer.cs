@@ -1,16 +1,16 @@
-ï»¿namespace TimeisMoney
+namespace TimeisMoney
 {
     partial class ExpensePage
     {
         /// <summary> 
-        /// è¨­è¨ˆå·¥å…·æ‰€éœ€çš„è®Šæ•¸ã€‚
+        /// ³]­p¤u¨ã©Ò»İªºÅÜ¼Æ¡C
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// æ¸…é™¤ä»»ä½•ä½¿ç”¨ä¸­çš„è³‡æºã€‚
+        /// ²M°£¥ô¦ó¨Ï¥Î¤¤ªº¸ê·½¡C
         /// </summary>
-        /// <param name="disposing">å¦‚æœæ‡‰è©²è™•ç½®å—æ§è³‡æºå‰‡ç‚º trueï¼Œå¦å‰‡ç‚º falseã€‚</param>
+        /// <param name="disposing">¦pªGÀ³¸Ó³B¸m¨ü±±¸ê·½«h¬° true¡A§_«h¬° false¡C</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region å…ƒä»¶è¨­è¨ˆå·¥å…·ç”¢ç”Ÿçš„ç¨‹å¼ç¢¼
+        #region ¤¸¥ó³]­p¤u¨ã²£¥Íªºµ{¦¡½X
 
         /// <summary> 
-        /// æ­¤ç‚ºè¨­è¨ˆå·¥å…·æ”¯æ´æ‰€éœ€çš„æ–¹æ³• - è«‹å‹¿ä½¿ç”¨ç¨‹å¼ç¢¼ç·¨è¼¯å™¨ä¿®æ”¹
-        /// é€™å€‹æ–¹æ³•çš„å…§å®¹ã€‚
+        /// ¦¹¬°³]­p¤u¨ã¤ä´©©Ò»İªº¤èªk - ½Ğ¤Å¨Ï¥Îµ{¦¡½X½s¿è¾¹­×§ï
+        /// ³o­Ó¤èªkªº¤º®e¡C
         /// </summary>
         private void InitializeComponent()
         {
@@ -51,17 +51,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(28, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "æ”¶æ”¯é¡å‹:";
+            this.label1.Text = "¦¬¤äÃş«¬:";
             // 
             // cmbType
             // 
-            this.cmbType.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cmbType.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbType.FormattingEnabled = true;
             this.cmbType.Location = new System.Drawing.Point(129, 24);
             this.cmbType.Name = "cmbType";
@@ -71,17 +71,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(64, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "åˆ†é¡:";
+            this.label2.Text = "¤ÀÃş:";
             // 
             // cmbCategory
             // 
-            this.cmbCategory.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cmbCategory.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(129, 61);
             this.cmbCategory.Name = "cmbCategory";
@@ -91,17 +91,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(64, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 25);
             this.label3.TabIndex = 6;
-            this.label3.Text = "é‡‘é¡:";
+            this.label3.Text = "ª÷ÃB:";
             // 
             // numAmount
             // 
-            this.numAmount.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numAmount.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.numAmount.Location = new System.Drawing.Point(129, 100);
             this.numAmount.Maximum = new decimal(new int[] {
             9999999,
@@ -115,17 +115,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(64, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 8;
-            this.label4.Text = "æ—¥æœŸ:";
+            this.label4.Text = "¤é´Á:";
             // 
             // dtpRecordDate
             // 
-            this.dtpRecordDate.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.dtpRecordDate.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dtpRecordDate.Location = new System.Drawing.Point(129, 145);
             this.dtpRecordDate.Name = "dtpRecordDate";
             this.dtpRecordDate.Size = new System.Drawing.Size(200, 34);
@@ -134,17 +134,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label5.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(28, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 25);
             this.label5.TabIndex = 10;
-            this.label5.Text = "ä»˜æ¬¾æ–¹å¼:";
+            this.label5.Text = "¥I´Ú¤è¦¡:";
             // 
             // cmbPaymentMethod
             // 
-            this.cmbPaymentMethod.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cmbPaymentMethod.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbPaymentMethod.FormattingEnabled = true;
             this.cmbPaymentMethod.Location = new System.Drawing.Point(129, 189);
             this.cmbPaymentMethod.Name = "cmbPaymentMethod";
@@ -154,17 +154,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label6.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(64, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 25);
             this.label6.TabIndex = 12;
-            this.label6.Text = "å‚™è¨»:";
+            this.label6.Text = "³Æµù:";
             // 
             // txtNote
             // 
-            this.txtNote.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtNote.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtNote.Location = new System.Drawing.Point(129, 231);
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(200, 34);
@@ -174,13 +174,13 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAdd.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(382, 220);
+            this.btnAdd.Location = new System.Drawing.Point(445, 228);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(115, 40);
             this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "æ–°å¢ç´€éŒ„";
+            this.btnAdd.Text = "·s¼W¬ö¿ı";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // dgvExpenses
@@ -197,7 +197,7 @@
             this.dgvExpenses.RowHeadersWidth = 62;
             this.dgvExpenses.RowTemplate.Height = 35;
             this.dgvExpenses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvExpenses.Size = new System.Drawing.Size(570, 140);
+            this.dgvExpenses.Size = new System.Drawing.Size(760, 310);
             this.dgvExpenses.TabIndex = 15;
             this.dgvExpenses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExpenses_CellClick);
             // 
@@ -206,13 +206,13 @@
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.Enabled = false;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnUpdate.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnUpdate.Location = new System.Drawing.Point(382, 124);
+            this.btnUpdate.Location = new System.Drawing.Point(445, 132);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(115, 40);
             this.btnUpdate.TabIndex = 16;
-            this.btnUpdate.Text = "å„²å­˜ä¿®æ”¹";
+            this.btnUpdate.Text = "Àx¦s­×§ï";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -221,13 +221,13 @@
             this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.Enabled = false;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("å¾®è»Ÿæ­£é»‘é«”", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnDelete.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnDelete.Location = new System.Drawing.Point(382, 172);
+            this.btnDelete.Location = new System.Drawing.Point(445, 180);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(115, 40);
             this.btnDelete.TabIndex = 17;
-            this.btnDelete.Text = "åˆªé™¤ç´€éŒ„";
+            this.btnDelete.Text = "§R°£¬ö¿ı";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -253,7 +253,7 @@
             this.Controls.Add(this.cmbType);
             this.Controls.Add(this.label1);
             this.Name = "ExpensePage";
-            this.Size = new System.Drawing.Size(600, 440);
+            this.Size = new System.Drawing.Size(800, 600);
             this.Load += new System.EventHandler(this.ExpensePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).EndInit();

@@ -52,6 +52,8 @@ namespace TimeisMoney
                         DataTable dt = new DataTable();
                         dt.Load(reader); // 將 SqliteDataReader 的資料轉入 DataTable
                         dgvExpenses.DataSource = dt; // 綁定到畫面的表格
+                        //讓表格的奇數列呈現淺灰色背景
+                        dgvExpenses.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.LightGray;
                     }
                 }
             }

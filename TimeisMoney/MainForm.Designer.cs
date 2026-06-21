@@ -1,16 +1,16 @@
-ï»¿namespace TimeisMoney
+namespace TimeisMoney
 {
     partial class MainForm
     {
         /// <summary>
-        /// è¨­è¨ˆå·¥å…·æ‰€éœ€çš„è®Šæ•¸ã€‚
+        /// ³]­p¤u¨ã©Ò»İªºÅÜ¼Æ¡C
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// æ¸…é™¤ä»»ä½•ä½¿ç”¨ä¸­çš„è³‡æºã€‚
+        /// ²M°£¥ô¦ó¨Ï¥Î¤¤ªº¸ê·½¡C
         /// </summary>
-        /// <param name="disposing">å¦‚æœæ‡‰è©²è™•ç½®å—æ§è³‡æºå‰‡ç‚º trueï¼Œå¦å‰‡ç‚º falseã€‚</param>
+        /// <param name="disposing">¦pªGÀ³¸Ó³B¸m¨ü±±¸ê·½«h¬° true¡A§_«h¬° false¡C</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form è¨­è¨ˆå·¥å…·ç”¢ç”Ÿçš„ç¨‹å¼ç¢¼
+        #region Windows Form ³]­p¤u¨ã²£¥Íªºµ{¦¡½X
 
         /// <summary>
-        /// æ­¤ç‚ºè¨­è¨ˆå·¥å…·æ”¯æ´æ‰€éœ€çš„æ–¹æ³• - è«‹å‹¿ä½¿ç”¨ç¨‹å¼ç¢¼ç·¨è¼¯å™¨ä¿®æ”¹
-        /// é€™å€‹æ–¹æ³•çš„å…§å®¹ã€‚
+        /// ¦¹¬°³]­p¤u¨ã¤ä´©©Ò»İªº¤èªk - ½Ğ¤Å¨Ï¥Îµ{¦¡½X½s¿è¾¹­×§ï
+        /// ³o­Ó¤èªkªº¤º®e¡C
         /// </summary>
         private void InitializeComponent()
         {
@@ -46,51 +46,55 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 450);
+            this.panelMenu.Size = new System.Drawing.Size(200, 600);
             this.panelMenu.TabIndex = 0;
             // 
             // btnSettings
             // 
             this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSettings.Location = new System.Drawing.Point(0, 150);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(200, 50);
             this.btnSettings.TabIndex = 3;
-            this.btnSettings.Text = "ç³»çµ±è¨­å®š";
+            this.btnSettings.Text = "¨t²Î³]©w";
             this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // btnTask
             // 
             this.btnTask.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTask.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTask.Location = new System.Drawing.Point(0, 100);
             this.btnTask.Name = "btnTask";
             this.btnTask.Size = new System.Drawing.Size(200, 50);
             this.btnTask.TabIndex = 2;
-            this.btnTask.Text = "ä»»å‹™æ™‚é–“";
+            this.btnTask.Text = "¥ô°È®É¶¡";
             this.btnTask.UseVisualStyleBackColor = true;
             // 
             // btnExpense
             // 
             this.btnExpense.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpense.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnExpense.Location = new System.Drawing.Point(0, 50);
             this.btnExpense.Name = "btnExpense";
             this.btnExpense.Size = new System.Drawing.Size(200, 50);
             this.btnExpense.TabIndex = 1;
-            this.btnExpense.Text = "è¨˜å¸³ç®¡ç†";
+            this.btnExpense.Text = "°O±bºŞ²z";
             this.btnExpense.UseVisualStyleBackColor = true;
             // 
             // btnDashboard
             // 
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("·L³n¥¿¶ÂÅé", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnDashboard.Location = new System.Drawing.Point(0, 0);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(200, 50);
             this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "ç¸½è¦½åˆ†æ";
+            this.btnDashboard.Text = "Á`Äı¤ÀªR";
             this.btnDashboard.UseVisualStyleBackColor = true;
             // 
             // panelMainContent
@@ -98,18 +102,19 @@
             this.panelMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainContent.Location = new System.Drawing.Point(200, 0);
             this.panelMainContent.Name = "panelMainContent";
-            this.panelMainContent.Size = new System.Drawing.Size(600, 450);
+            this.panelMainContent.Size = new System.Drawing.Size(800, 600);
             this.panelMainContent.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panelMainContent);
             this.Controls.Add(this.panelMenu);
             this.Name = "MainForm";
-            this.Text = "Time is moneyå€‹äººè¨˜å¸³èˆ‡æ™‚é–“æˆæœ¬ç®¡ç†ç³»çµ±";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Time is money­Ó¤H°O±b»P®É¶¡¦¨¥»ºŞ²z¨t²Î";
             this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

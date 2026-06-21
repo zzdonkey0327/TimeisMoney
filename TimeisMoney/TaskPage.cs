@@ -219,8 +219,37 @@ namespace TimeisMoney
                         DataTable dt = new DataTable();
                         dt.Load(reader);
                         dgvTasks.DataSource = dt;
+                        ConfigureDataGridView();
                     }
                 }
+            }
+        }
+
+        private void ConfigureDataGridView()
+        {
+            if (dgvTasks.Columns.Count > 0)
+            {
+                // 隱藏不必要的欄位 （保留畫面整潔，不一定要顯示資料庫Id或是詳細到秒的紀錄等）
+                if (dgvTasks.Columns["Id"] != null) dgvTasks.Columns["Id"].Visible = false;
+                if (dgvTasks.Columns["HourlyRate"] != null) dgvTasks.Columns["HourlyRate"].Visible = false;
+                if (dgvTasks.Columns["EndTime"] != null) dgvTasks.Columns["EndTime"].Visible = false;
+
+                // 設定欄位標題與順序（重要性由左至右），調整HeaderText大小節省空間及高度
+                if (dgvTasks.Columns["TaskName"] != null) { dgvTasks.Columns["TaskName"].HeaderText = "任務名稱"; dgvTasks.Columns["TaskName"].DisplayIndex = 0; }
+                if (dgvTasks.Columns["Status"] != null) { dgvTasks.Columns["Status"].HeaderText = "任務狀態"; dgvTasks.Columns["Status"].DisplayIndex = 5; }
+                if (dgvTasks.Columns["DurationMinutes"] != null) { dgvTasks.Columns["DurationMinutes"].HeaderText = "耗時(分)"; dgvTasks.Columns["DurationMinutes"].DisplayIndex = 1; }
+                if (dgvTasks.Columns["Cost"] != null) { dgvTasks.Columns["Cost"].HeaderText = "產生價值"; dgvTasks.Columns["Cost"].DisplayIndex = 2; }
+                if (dgvTasks.Columns["StartTime"] != null) { dgvTasks.Columns["StartTime"].HeaderText = "開始時間"; dgvTasks.Columns["StartTime"].DisplayIndex = 3; }
+                if (dgvTasks.Columns["Category"] != null) { dgvTasks.Columns["Category"].HeaderText = "分類"; dgvTasks.Columns["Category"].DisplayIndex = 4; }
+
+                // 調整字體大小與列高
+                dgvTasks.DefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+                dgvTasks.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+                dgvTasks.RowTemplate.Height = 28;
+                dgvTasks.ColumnHeadersHeight = 35;
+
+                // 設定自動填滿欄位
+                dgvTasks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
     }
