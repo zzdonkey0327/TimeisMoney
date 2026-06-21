@@ -92,7 +92,7 @@ namespace TimeisMoney
         {
             taskTimer.Stop();
             btnStart.Enabled = true;
-            btnStart.Text = "▶ 繼續任務";
+            btnStart.Text = "▶ 繼續";
             btnPause.Enabled = false;
         }
 
@@ -194,7 +194,7 @@ namespace TimeisMoney
 
             txtTaskName.Enabled = true;
             txtTaskName.Clear();
-            btnStart.Text = "▶ 開始任務";
+            btnStart.Text = "▶ 開始";
             btnStart.Enabled = true;
             btnPause.Enabled = false;
             btnStop.Enabled = false;

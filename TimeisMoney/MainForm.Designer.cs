@@ -109,7 +109,7 @@
             this.Controls.Add(this.panelMainContent);
             this.Controls.Add(this.panelMenu);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Time is money個人記帳與時間成本管理系統";
             this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

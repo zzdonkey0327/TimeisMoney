@@ -39,7 +39,7 @@
             this.btnExportExpense.Name = "btnExportExpense";
             this.btnExportExpense.Size = new System.Drawing.Size(231, 45);
             this.btnExportExpense.TabIndex = 1;
-            this.btnExportExpense.Text = "匯出記帳紀錄 (CSV)";
+            this.btnExportExpense.Text = "匯出記帳 (.csv)";
             this.btnExportExpense.UseVisualStyleBackColor = true;
             // 
             // btnExportTask
@@ -48,7 +48,7 @@
             this.btnExportTask.Name = "btnExportTask";
             this.btnExportTask.Size = new System.Drawing.Size(231, 45);
             this.btnExportTask.TabIndex = 2;
-            this.btnExportTask.Text = "匯出任務紀錄 (CSV)";
+            this.btnExportTask.Text = "匯出任務 (.csv)";
             this.btnExportTask.UseVisualStyleBackColor = true;
             // 
             // btnBackupDb
@@ -57,7 +57,7 @@
             this.btnBackupDb.Name = "btnBackupDb";
             this.btnBackupDb.Size = new System.Drawing.Size(231, 45);
             this.btnBackupDb.TabIndex = 3;
-            this.btnBackupDb.Text = "備份整個資料庫檔案 (.db)";
+            this.btnBackupDb.Text = "備份資料庫 (.db)";
             this.btnBackupDb.UseVisualStyleBackColor = true;
             // 
             // SettingsPage
