@@ -102,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SettingsPage.resx">
       <DependentUpon>SettingsPage.cs</DependentUpon>
@@ -126,6 +127,9 @@
     <PackageReference Include="Microsoft.Data.Sqlite">
       <Version>10.0.9</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名設計.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
