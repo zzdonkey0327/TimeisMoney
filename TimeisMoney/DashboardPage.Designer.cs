@@ -34,6 +34,9 @@ namespace TimeisMoney
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblTotalExpense = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -46,12 +49,18 @@ namespace TimeisMoney
             this.lblTotalTaskValue = new System.Windows.Forms.Label();
             this.chartExpense = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartTask = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblTotalIncome = new System.Windows.Forms.Label();
+            this.chartTrend = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartExpense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTask)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTrend)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTotalExpense
@@ -69,6 +78,7 @@ namespace TimeisMoney
             // 
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(794, 122);
@@ -79,9 +89,9 @@ namespace TimeisMoney
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.lblNetBalance);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(540, 0);
+            this.panel5.Location = new System.Drawing.Point(600, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.Size = new System.Drawing.Size(194, 100);
             this.panel5.TabIndex = 8;
             // 
             // lblNetBalance
@@ -132,9 +142,9 @@ namespace TimeisMoney
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.lblTotalTaskValue);
-            this.panel4.Location = new System.Drawing.Point(207, 3);
+            this.panel4.Location = new System.Drawing.Point(406, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.Size = new System.Drawing.Size(188, 100);
             this.panel4.TabIndex = 8;
             // 
             // label2
@@ -172,7 +182,7 @@ namespace TimeisMoney
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartExpense.Series.Add(series1);
-            this.chartExpense.Size = new System.Drawing.Size(398, 466);
+            this.chartExpense.Size = new System.Drawing.Size(398, 246);
             this.chartExpense.TabIndex = 2;
             this.chartExpense.Text = "chart1";
             // 
@@ -182,24 +192,73 @@ namespace TimeisMoney
             this.chartTask.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chartTask.Legends.Add(legend2);
-            this.chartTask.Location = new System.Drawing.Point(407, 131);
+            this.chartTask.Location = new System.Drawing.Point(3, 383);
             this.chartTask.Name = "chartTask";
             this.chartTask.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chartTask.Series.Add(series2);
-            this.chartTask.Size = new System.Drawing.Size(390, 466);
+            this.chartTask.Size = new System.Drawing.Size(398, 214);
             this.chartTask.TabIndex = 3;
             this.chartTask.Text = "chart2";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.lblTotalIncome);
+            this.panel3.Location = new System.Drawing.Point(209, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(192, 100);
+            this.panel3.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(15, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 28);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "本月總收入";
+            // 
+            // lblTotalIncome
+            // 
+            this.lblTotalIncome.AutoSize = true;
+            this.lblTotalIncome.Font = new System.Drawing.Font("微軟正黑體", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblTotalIncome.ForeColor = System.Drawing.Color.DarkMagenta;
+            this.lblTotalIncome.Location = new System.Drawing.Point(15, 45);
+            this.lblTotalIncome.Name = "lblTotalIncome";
+            this.lblTotalIncome.Size = new System.Drawing.Size(70, 50);
+            this.lblTotalIncome.TabIndex = 0;
+            this.lblTotalIncome.Text = "$0";
+            // 
+            // chartTrend
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chartTrend.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartTrend.Legends.Add(legend3);
+            this.chartTrend.Location = new System.Drawing.Point(407, 131);
+            this.chartTrend.Name = "chartTrend";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartTrend.Series.Add(series3);
+            this.chartTrend.Size = new System.Drawing.Size(390, 466);
+            this.chartTrend.TabIndex = 8;
+            this.chartTrend.Text = "chart1";
             // 
             // DashboardPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.chartTrend);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.chartTask);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.chartExpense);
             this.Controls.Add(this.panel1);
             this.Name = "DashboardPage";
@@ -214,6 +273,9 @@ namespace TimeisMoney
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartExpense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTask)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTrend)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +294,9 @@ namespace TimeisMoney
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTotalIncome;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTrend;
     }
 }
