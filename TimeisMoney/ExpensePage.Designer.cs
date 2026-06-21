@@ -51,48 +51,57 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(28, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 18);
+            this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "收支類型:";
             // 
             // cmbType
             // 
+            this.cmbType.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbType.FormattingEnabled = true;
             this.cmbType.Location = new System.Drawing.Point(129, 24);
             this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(121, 26);
+            this.cmbType.Size = new System.Drawing.Size(121, 33);
             this.cmbType.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(64, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 18);
+            this.label2.Size = new System.Drawing.Size(57, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "分類:";
             // 
             // cmbCategory
             // 
+            this.cmbCategory.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(129, 61);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(121, 26);
+            this.cmbCategory.Size = new System.Drawing.Size(121, 33);
             this.cmbCategory.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(64, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 18);
+            this.label3.Size = new System.Drawing.Size(57, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "金額:";
             // 
             // numAmount
             // 
+            this.numAmount.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.numAmount.Location = new System.Drawing.Point(129, 100);
             this.numAmount.Maximum = new decimal(new int[] {
             9999999,
@@ -100,105 +109,133 @@
             0,
             0});
             this.numAmount.Name = "numAmount";
-            this.numAmount.Size = new System.Drawing.Size(121, 29);
+            this.numAmount.Size = new System.Drawing.Size(121, 34);
             this.numAmount.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(64, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 18);
+            this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "日期:";
             // 
             // dtpRecordDate
             // 
+            this.dtpRecordDate.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dtpRecordDate.Location = new System.Drawing.Point(129, 145);
             this.dtpRecordDate.Name = "dtpRecordDate";
-            this.dtpRecordDate.Size = new System.Drawing.Size(200, 29);
+            this.dtpRecordDate.Size = new System.Drawing.Size(200, 34);
             this.dtpRecordDate.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(28, 192);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 18);
+            this.label5.Size = new System.Drawing.Size(97, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "付款方式:";
             // 
             // cmbPaymentMethod
             // 
+            this.cmbPaymentMethod.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbPaymentMethod.FormattingEnabled = true;
             this.cmbPaymentMethod.Location = new System.Drawing.Point(129, 189);
             this.cmbPaymentMethod.Name = "cmbPaymentMethod";
-            this.cmbPaymentMethod.Size = new System.Drawing.Size(121, 26);
+            this.cmbPaymentMethod.Size = new System.Drawing.Size(121, 33);
             this.cmbPaymentMethod.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(64, 236);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 18);
+            this.label6.Size = new System.Drawing.Size(57, 25);
             this.label6.TabIndex = 12;
             this.label6.Text = "備註:";
             // 
             // txtNote
             // 
+            this.txtNote.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtNote.Location = new System.Drawing.Point(129, 231);
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(121, 29);
+            this.txtNote.Size = new System.Drawing.Size(200, 34);
             this.txtNote.TabIndex = 13;
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(382, 220);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(115, 40);
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "新增紀錄";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // dgvExpenses
             // 
             this.dgvExpenses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvExpenses.BackgroundColor = System.Drawing.Color.White;
+            this.dgvExpenses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvExpenses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvExpenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExpenses.Location = new System.Drawing.Point(3, 278);
+            this.dgvExpenses.GridColor = System.Drawing.Color.LightGray;
+            this.dgvExpenses.Location = new System.Drawing.Point(20, 278);
             this.dgvExpenses.Name = "dgvExpenses";
+            this.dgvExpenses.RowHeadersVisible = false;
             this.dgvExpenses.RowHeadersWidth = 62;
-            this.dgvExpenses.RowTemplate.Height = 31;
-            this.dgvExpenses.Size = new System.Drawing.Size(544, 122);
+            this.dgvExpenses.RowTemplate.Height = 35;
+            this.dgvExpenses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvExpenses.Size = new System.Drawing.Size(570, 140);
             this.dgvExpenses.TabIndex = 15;
             this.dgvExpenses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExpenses_CellClick);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.Enabled = false;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnUpdate.Location = new System.Drawing.Point(382, 124);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(115, 40);
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "儲存修改";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.Enabled = false;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.btnDelete.Location = new System.Drawing.Point(382, 172);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(115, 40);
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "刪除紀錄";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // ExpensePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dgvExpenses);
@@ -216,7 +253,7 @@
             this.Controls.Add(this.cmbType);
             this.Controls.Add(this.label1);
             this.Name = "ExpensePage";
-            this.Size = new System.Drawing.Size(550, 400);
+            this.Size = new System.Drawing.Size(600, 440);
             this.Load += new System.EventHandler(this.ExpensePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).EndInit();
