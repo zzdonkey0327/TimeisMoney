@@ -85,6 +85,9 @@ namespace TimeisMoney
             chartExpense.Titles.Clear();
             chartExpense.Titles.Add("本月支出分類佔比");
 
+            // 新增：隱藏右側的圖例，因為標籤已經直接顯示在圓餅上了
+            chartExpense.Legends.Clear();
+
             Series series = new Series("Expense")
             {
                 ChartType = SeriesChartType.Pie, // 設定為圓餅圖
@@ -133,8 +136,18 @@ namespace TimeisMoney
             };
             chartTask.Series.Add(series);
 
-            // 隱藏 X 軸的網格線讓畫面乾淨點
+            // --- 新增 UI 優化設定 ---
+            // 1. 隱藏不必要的圖例 (Legend)
+            chartTask.Legends.Clear();
+
+            // 2. 格式化 Y 軸數字，去除小數點並加上千分位 (例如：120)
+            chartTask.ChartAreas[0].AxisY.LabelStyle.Format = "N0";
+
+            // 3. 隱藏 X 軸與 Y 軸的背景網格線，讓畫面更乾淨
             chartTask.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartTask.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.LightGray;
+            chartTask.ChartAreas[0].AxisY.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
+            // -------------------------
 
             using (var connection = DatabaseHelper.GetConnection())
             {
@@ -152,7 +165,11 @@ namespace TimeisMoney
                     {
                         string category = reader["Category"].ToString();
                         double cost = Convert.ToDouble(reader["TotalCost"]);
-                        series.Points.AddXY(category, cost);
+                        //series.Points.AddXY(category, cost);
+                        int pointIndex = series.Points.AddXY(category, cost);
+
+                        // 新增：把柱狀圖上方的數字也格式化，去掉小數點
+                        series.Points[pointIndex].Label = $"${cost:N0}";
                     }
                 }
             }
